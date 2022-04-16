@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./Develop/style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -28,14 +28,16 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+
+  <!-- Timeblocks go here -->
+    <div class="time-block">
+
       
       <div class="container px-lg-5">
         <div class="row mx-lg-n5">
-          <div class="col border border-dark">6 am</div>
-          <textarea class="col-lg-8 border border-dark">Custom work</textarea>
-          <button id="btn-save" class="col border border-dark">
+          <div class="hour col">8 am</div>
+          <textarea class="text col-lg-8">Custom work</textarea>
+          <button class="btn-save col border border-dark rounded-right">
             <i class="fas fa-save"></i>
           </button>
         </div>
@@ -43,9 +45,9 @@
 
       <div class="container px-lg-5">
         <div class="row mx-lg-n5">
-          <div class="col border border-dark">7 am</div>
-          <textarea class="col-lg-8 border border-dark">Custom work</textarea>
-          <button id="btn-save" class="col border border-dark">
+          <div class="hour col">9 am</div>
+          <textarea class="text col-lg-8">Custom work</textarea>
+          <button class="btn-save col border border-dark rounded-right">
             <i class="fas fa-save"></i>
           </button>
         </div>
@@ -53,9 +55,9 @@
 
       <div class="container px-lg-5">
         <div class="row mx-lg-n5">
-          <div class="col border border-dark">8 am</div>
-          <textarea class="col-lg-8 border border-dark">Custom work</textarea>
-          <button id="btn-save" class="col border border-dark">
+          <div class="hour col">10 am</div>
+          <textarea class="text col-lg-8">Custom work</textarea>
+          <button class="btn-save col border border-dark rounded-right">
             <i class="fas fa-save"></i>
           </button>
         </div>
@@ -63,9 +65,9 @@
 
       <div class="container px-lg-5">
         <div class="row mx-lg-n5">
-          <div class="col border border-dark">9 am</div>
-          <textarea class="col-lg-8 border border-dark">Custom work</textarea>
-          <button id="btn-save" class="col border border-dark">
+          <div class="hour col">11 am</div>
+          <textarea class="text col-lg-8">Custom work</textarea>
+          <button class="btn-save col border border-dark rounded-right">
             <i class="fas fa-save"></i>
           </button>
         </div>
@@ -73,9 +75,9 @@
 
       <div class="container px-lg-5">
         <div class="row mx-lg-n5">
-          <div class="col border border-dark">10 am</div>
-          <textarea class="col-lg-8 border border-dark">Custom work</textarea>
-          <button id="btn-save" class="col border border-dark">
+          <div class="hour col">12 pm</div>
+          <textarea class="text col-lg-8">Custom work</textarea>
+          <button class="btn-save col border border-dark rounded-right">
             <i class="fas fa-save"></i>
           </button>
         </div>
@@ -83,9 +85,9 @@
 
       <div class="container px-lg-5">
         <div class="row mx-lg-n5">
-          <div class="col border border-dark">11 am</div>
-          <textarea class="col-lg-8 border border-dark">Custom work</textarea>
-          <button id="btn-save" class="col border border-dark">
+          <div class="hour col">1 pm</div>
+          <textarea class="text col-lg-8">Custom work</textarea>
+          <button class="btn-save col border border-dark rounded-right">
             <i class="fas fa-save"></i>
           </button>
         </div>
@@ -93,9 +95,9 @@
 
       <div class="container px-lg-5">
         <div class="row mx-lg-n5">
-          <div class="col border border-dark">12 pm</div>
-          <textarea class="col-lg-8 border border-dark">Custom work</textarea>
-          <button id="btn-save" class="col border border-dark">
+          <div class="hour col">2 pm</div>
+          <textarea class="text col-lg-8">Custom work</textarea>
+          <button class="btn-save col border border-dark rounded-right">
             <i class="fas fa-save"></i>
           </button>
         </div>
@@ -103,9 +105,9 @@
 
       <div class="container px-lg-5">
         <div class="row mx-lg-n5">
-          <div class="col border border-dark">1 pm</div>
-          <textarea class="col-lg-8 border border-dark">Custom work</textarea>
-          <button id="btn-save" class="col border border-dark">
+          <div class="hour col">3 pm</div>
+          <textarea class="text col-lg-8">Custom work</textarea>
+          <button class="btn-save col border border-dark rounded-right">
             <i class="fas fa-save"></i>
           </button>
         </div>
@@ -113,9 +115,9 @@
 
       <div class="container px-lg-5">
         <div class="row mx-lg-n5">
-          <div class="col border border-dark">2 pm</div>
-          <textarea class="col-lg-8 border border-dark">Custom work</textarea>
-          <button id="btn-save" class="col border border-dark">
+          <div class="hour col">4 pm</div>
+          <textarea class="text col-lg-8">Custom work</textarea>
+          <button class="btn-save col border border-dark rounded-right">
             <i class="fas fa-save"></i>
           </button>
         </div>
@@ -123,29 +125,9 @@
 
       <div class="container px-lg-5">
         <div class="row mx-lg-n5">
-          <div class="col border border-dark">3 pm</div>
-          <textarea class="col-lg-8 border border-dark">Custom work</textarea>
-          <button id="btn-save" class="col border border-dark">
-            <i class="fas fa-save"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="container px-lg-5">
-        <div class="row mx-lg-n5">
-          <div class="col border border-dark">4 pm</div>
-          <textarea class="col-lg-8 border border-dark">Custom work</textarea>
-          <button id="btn-save" class="col border border-dark">
-            <i class="fas fa-save"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="container px-lg-5">
-        <div class="row mx-lg-n5">
-          <div class="col border border-dark">5 pm</div>
-          <textarea class="col-lg-8 border border-dark">Custom work</textarea>
-          <button id="btn-save" class="col border border-dark">
+          <div class="hour col">5 pm</div>
+          <textarea class="text col-lg-8">Custom work</textarea>
+          <button class="btn-save col border border-dark rounded-right">
             <i class="fas fa-save"></i>
           </button>
         </div>
@@ -155,5 +137,6 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
