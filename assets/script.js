@@ -18,59 +18,61 @@ var time = [
   "4 PM",
   "5 PM",
 ];
+
+// Current Time
 var tempHour = new Date();
+// Current time in hour
 var currentHour = tempHour.toLocaleString("en-US", {
   hour: "numeric",
   hour12: true,
 });
-
+// Index of variable "time" and put it into variable of currentHour
 var index = time.indexOf(currentHour);
 
-// for (let i = 0; i < time.length; i++) {
-//   if (i < index) {
-//     $("textarea").removeClass("future present")
-//     $("textarea").addClass("past")
-//   } 
+// Past 
+$(".row").each(function (i) {
+  if (i < index) {
+    $(this).children("textarea").removeClass("future present");
+    $(this).children("textarea").addClass("past");
+  }
+  console.log(this);
+  console.log($(".row"));
+});
 
-//   else if (i > index) {
-//     console.log(i > index)
-//     console.log(time[i]);
-//     $("textarea").removeClass("past present")
-//     $("textarea").addClass("future")
-//   } 
-  
-//   else {
-//       $("textarea").removeClass("future past")
-//       $("textarea").addClass("present")
-      
-//   }
-// }
+// Future
+$(".row").each(function (i) {
+  if (i > index) {
+    $(this).children("textarea").removeClass("past present");
+    $(this).children("textarea").addClass("future");
+  }
+});
 
-$(".row").each(function(i){
-    if (i < index) {
-      $(this).children("textarea").removeClass("future present")
-      $(this).children("textarea").addClass("past")
-    }
-    console.log(this)
-    console.log($(".row"))
-})
+// Present
+$(".row").each(function (i) {
+  if (i == index) {
+    $(this).children("textarea").removeClass("future past");
+    $(this).children("textarea").addClass("present");
+  }
+});
 
-$(".btn-save").on("click", save)
+// When the save button is clicked
+$(".btn-save").on("click", save);
 
+// Save in local Storage
 function save() {
-$("textarea").each(function(i){
-    localStorage.setItem(i, this.value)
-    console.log(this)
-})
+  $("textarea").each(function (i) {
+    localStorage.setItem(i, this.value);
+    console.log(this);
+  });
 }
 
-function getItem(){
-    $("textarea").each(function(i){
-        var saveText = localStorage.getItem(i)
-        console.log($(this))
-        $(this).text(saveText)
-    })
+// Get item from local storage
+function getItem() {
+  $("textarea").each(function (i) {
+    var saveText = localStorage.getItem(i);
+    console.log($(this));
+    $(this).text(saveText);
+  });
 }
 
 getItem();
-
