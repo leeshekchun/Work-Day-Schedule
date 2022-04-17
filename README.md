@@ -10,4 +10,5 @@
 
 ##URL to deployed application: https://leeshekchun.github.io/Work-Day-Schedule/
 
-<img width="1728" alt="Screen Shot 2022-04-17 at 5 33 52 PM" src="https://user-images.githubusercontent.com/99776016/163736280-d03911f9-f418-415e-84b9-ea2cb4ad7f35.png">
+
+<img width="1653" alt="Screen Shot 2022-04-17 at 5 46 05 PM" src="https://user-images.githubusercontent.com/99776016/163736537-345cdfba-c4ca-494d-8a4c-ea3b0d04ad44.png">
